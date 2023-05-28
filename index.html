@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+    <link rel="stylesheet" href="contactList.css">
+</head>
+<body>
+    <nav id="navbar"> 
+        <h3 id="Logo">Logo</h3>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="bars-icon">
+           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+         </svg>  
+         <div id = "links-container">
+           <a class="link" href="" target="" rel="noopener noreferrer">Formularios</a>
+           <a class="link" href="" target="" rel="noopener noreferrer">Fundamentos</a>
+           <a class="link" href=""  rel="noopener noreferrer">Volver</a>
+         </div>    
+    </nav>
+    <main id="main-container">
+        <h1 id="main-title">Contactos</h1>
+        <form id="form">
+            <div class="form-name-input">
+                <input id="name-input" placeholder="Ingresar nombre y apellido" autocomplete="off">
+                <p class="info-text">Cada nombre debe contener entre 2 a 16 letras. No uses simbolos ni números!</p>
+            </div>
+            <div class="form-phone-input">
+                <input id="phone-input" placeholder= "Ingresar número telefónico" autocomplete="off">
+                <p class="info-text">El número debe ser venezolano!</p>
+            </div>    
+            <button class="form-btn" disabled>Enviar</button>
+        </form>
+        <ul id="list"> 
+        </ul>
+    </main>    
+    <script src="contactList.js"></script>
+</body>
+</html>
