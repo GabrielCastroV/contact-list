@@ -73,6 +73,7 @@ list.addEventListener('click', (e) => {
     if (e.target.closest('.delete-icon')) {
       const li = e.target.closest('li');
       li.remove(); // elimino el <li> mas cercano
+      localStorage.setItem('listaContactos', list.innerHTML)
     }
   if (e.target.closest('.edit-icon') || e.target.querySelector('.edit-icon')){
     const li = e.target.closest('li');
