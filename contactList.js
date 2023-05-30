@@ -85,11 +85,16 @@ list.addEventListener('click', (e) => {
             if (miniRegexValidation) {
                 miniInput.classList.add('correct')
                 miniInput.classList.remove('wrong')
-                editIcon.classList.remove('hide')
+                if (input.classList.contains('correct') && phone.classList.contains('correct')){
+                    editIcon.classList.remove('hide')
+                }
             }else{
                 miniInput.classList.remove('correct')
                 miniInput.classList.add('wrong')
                 editIcon.classList.add('hide')
+                if (input.classList.contains('correct') && phone.classList.contains('correct')){
+                    editIcon.classList.add('hide')
+                }
             }
         }
         input.addEventListener('input', e =>{
